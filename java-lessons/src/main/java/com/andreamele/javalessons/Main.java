@@ -15,13 +15,23 @@ public class Main {
         System.out.println("Id utente: " + meleAndrea.getTaxId());
 
         //definizione oggetto: nome classe nome oggetto(a scelta camelCase) = new nome classe()
-        MyDate birthdayOfAndrea = new MyDate();
-        birthdayOfAndrea.setDay(26);
-        birthdayOfAndrea.setMonth(7);
-        birthdayOfAndrea.setYear(1984);
+        MyDate birthdayOfAndrea = new MyDate(10,10,1984);
+        birthdayOfAndrea.setDay(50);
+        //birthdayOfAndrea.setMonth(7);
+        //birthdayOfAndrea.setYear(1984);
         meleAndrea.setBirthdate(birthdayOfAndrea);
-        System.out.println("Anno compleanno:" + meleAndrea.getBirthday().getYear());
+        birthdayOfAndrea.printDate();
+        meleAndrea.getBirthday().printDate();
 
+        //System.out.println("Anno compleanno:" + meleAndrea.getBirthday().getYear()) ;
+        //System.out.println("birthday: " + meleAndrea.getBirthday());
+       //System.out.println("birthdayOfAndrea" + birthdayOfAndrea);
+
+
+        /*get birthday è il return di setBirthday
+        il setBirthday è il birthdayOfAndrea
+        getBirthday = birthdayOfAndrea
+        */
 
     }
 }

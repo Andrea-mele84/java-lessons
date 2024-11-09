@@ -9,11 +9,19 @@ public class MyDate {
     private int month;
     private int year;
 
+    public MyDate(int day,int month,int year){
+        checkValidDay(day);
+        this.day = day;
+        this.month = month;
+        this.year =year;
+    }
+
    /*
    definizione metodi
    visibilità tipo di ritorno nome del metodo (argomenti facoltativi)
     */
     public void setDay(int day){
+       checkValidDay(day);
         this.day = day;
     }
     public int getDay(){
@@ -36,5 +44,10 @@ public class MyDate {
     public void printDate(){
         System.out.println( day + "-" + month + "-" + year);
     }
+    public void checkValidDay (int day){
+        if (day > 31 || day <=0 ){
+            throw new IllegalArgumentException("Day must be between 1 and 31");
+        }
+    }
 }
-
+// a casa validazione mese e anno - classe user Taxid obbligatorio

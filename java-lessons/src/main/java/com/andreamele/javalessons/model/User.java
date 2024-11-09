@@ -11,7 +11,7 @@ public class User {
     }
 
     public String getFirstname() {
-        return this.firstname;
+        return firstname;
     }
 
     public void setLastname(String surname) {
