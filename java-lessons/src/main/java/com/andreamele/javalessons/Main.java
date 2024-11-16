@@ -16,9 +16,9 @@ public class Main {
 
         //definizione oggetto: nome classe nome oggetto(a scelta camelCase) = new nome classe()
         MyDate birthdayOfAndrea = new MyDate(10,10,1984);
-        birthdayOfAndrea.setDay(50);
-        //birthdayOfAndrea.setMonth(7);
-        //birthdayOfAndrea.setYear(1984);
+        birthdayOfAndrea.setDay(11);
+        birthdayOfAndrea.setMonth(9);
+        birthdayOfAndrea.setYear(2020);
         meleAndrea.setBirthdate(birthdayOfAndrea);
         birthdayOfAndrea.printDate();
         meleAndrea.getBirthday().printDate();
