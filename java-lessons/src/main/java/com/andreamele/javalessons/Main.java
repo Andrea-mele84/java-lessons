@@ -15,7 +15,7 @@ public class Main {
         System.out.println("Id utente: " + meleAndrea.getTaxId());
 
         //definizione oggetto: nome classe nome oggetto(a scelta camelCase) = new nome classe()
-        MyDate birthdayOfAndrea = new MyDate(10,10,1984);
+        MyDate birthdayOfAndrea = new MyDate(11,10,1984);
         birthdayOfAndrea.setDay(11);
         birthdayOfAndrea.setMonth(9);
         birthdayOfAndrea.setYear(2020);
