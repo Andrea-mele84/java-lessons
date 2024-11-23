@@ -9,6 +9,18 @@ public class MyDate {
     private int month;
     private int year;
 
+    public MyDate(int year) {
+        this(1, year);
+    }
+
+
+    public MyDate(int month, int year){
+        this(1, month, year);
+        //this.day = 1;
+        //this.month = month;
+        //this.year = year;
+    }
+
     public MyDate(int day,int month,int year){
         checkValidDay(day);
         checkValidMonth(month);
@@ -61,6 +73,12 @@ public class MyDate {
     public void checkValidYear (int year){
         if (year < 1930 || year >2024) {
             throw new IllegalArgumentException("Year must be between 1930 and 2024");
+        }
+
+    }
+    public void checkValidDayAndMonth (int day,int month) {
+        if (month == 2 && day >= 30) {
+            throw new IllegalArgumentException("Day of February must be between 1 and 29");
         }
     }
 }

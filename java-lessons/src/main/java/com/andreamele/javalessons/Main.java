@@ -16,10 +16,11 @@ public class Main {
 
         //definizione oggetto: nome classe nome oggetto(a scelta camelCase) = new nome classe()
         MyDate birthdayOfAndrea = new MyDate(11,10,1984);
+        MyDate birthdayWithoutDay = new MyDate(2024);
         birthdayOfAndrea.setDay(11);
         birthdayOfAndrea.setMonth(9);
         birthdayOfAndrea.setYear(2020);
-        meleAndrea.setBirthdate(birthdayOfAndrea);
+        meleAndrea.setBirthdate(birthdayWithoutDay);
         birthdayOfAndrea.printDate();
         meleAndrea.getBirthday().printDate();
 
