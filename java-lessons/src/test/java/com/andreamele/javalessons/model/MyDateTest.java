@@ -68,9 +68,9 @@ class MyDateTest {
     void checkMyDateConstructorWithOneArgKOTest() {
         int expectedDay = 5;
         int expectedMonth = 5;
-        int year = 2024;
+        int year = 2030;
         MyDate oneArg = new MyDate(year);
-        Assertions.assertNotEquals(expectedDay,expectedMonth oneArg.getYear());
+        Assertions.assertNotEquals(expectedDay,expectedMonth, oneArg.getYear());
 
     }
 }
