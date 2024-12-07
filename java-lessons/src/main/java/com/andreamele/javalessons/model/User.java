@@ -6,6 +6,7 @@ public class User {
     private String lastname;
     private MyDate birthday;
 
+
     public void setFistname(String name) {
         this.firstname = name;
     }

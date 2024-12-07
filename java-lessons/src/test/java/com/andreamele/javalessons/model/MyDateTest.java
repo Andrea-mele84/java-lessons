@@ -43,12 +43,11 @@ class MyDateTest {
 
     //per casa testare il ko del checkmydatetwoarguments
     @Test
-    void checkMyDateConstructorWithTwoArgsKOTest() {
-        int month = 7;
+    void checkMyDateConstructorWithTwoArgsKOForMonthWrongTest() {
+        int month = 13;
         int year = 2020;
-        int expectedDay = 5;
-        MyDate dateKO = new MyDate(month, year);
-        Assertions.assertNotEquals(expectedDay, dateKO.getDay());
+        //MyDate dateKO = new MyDate(month, year);
+        Assertions.assertThrows(IllegalArgumentException.class, () -> new MyDate(month, year)  );
 
     }
     //testare il costruttore che prende solo anno
@@ -59,18 +58,17 @@ class MyDateTest {
         int expectedMonth = 1;
         int year = 2024;
         MyDate oneArg = new MyDate(year);
-        Assertions.assertEquals(expectedDay, expectedMonth, oneArg.getYear());
-        //Assertions.assertEquals(year, oneArg.getYear());
+        Assertions.assertEquals(expectedDay, oneArg.getDay());
+        Assertions.assertEquals(expectedMonth, oneArg.getMonth());
+        Assertions.assertEquals(year, oneArg.getYear());
 
     }
 
     @Test
-    void checkMyDateConstructorWithOneArgKOTest() {
-        int expectedDay = 5;
-        int expectedMonth = 5;
+    void checkMyDateConstructorWithOneArgKOForYearWrongTest() {
         int year = 2030;
-        MyDate oneArg = new MyDate(year);
-        Assertions.assertNotEquals(expectedDay,expectedMonth, oneArg.getYear());
+        //MyDate oneArg = new MyDate(year);
+        Assertions.assertThrows(IllegalArgumentException.class, () -> new MyDate(year) );
 
     }
 }

@@ -16,7 +16,14 @@ public class Main {
 
         //definizione oggetto: nome classe nome oggetto(a scelta camelCase) = new nome classe()
         MyDate birthdayOfAndrea = new MyDate(11,10,1984);
+        MyDate.currentYear = 2024;
+        System.out.println(MyDate.currentYear);
         MyDate birthdayWithoutDay = new MyDate(2024);
+        MyDate.currentYear = 2020;
+        System.out.println(MyDate.currentYear);
+        System.out.println(MyDate.currentYear);
+
+
         birthdayOfAndrea.setDay(11);
         birthdayOfAndrea.setMonth(9);
         birthdayOfAndrea.setYear(2020);
@@ -32,6 +39,28 @@ public class Main {
         /*get birthday è il return di setBirthday
         il setBirthday è il birthdayOfAndrea
         getBirthday = birthdayOfAndrea
+        */
+
+       /* final MyDate myDateFinal = new MyDate(10,10,1984);
+        System.out.println(myDateFinal);
+        myDateFinal = new MyDate(15,8,2024);
+        System.out.println(myDateFinal);
+
+        */
+
+        /* final:
+         sulle variabili: serve a dichiarare variabili costanti ( non possono cambiare il loro valore)
+        se la variabile è un oggetto, questo non può cambiare istanza (non puoi fare new due volte)
+        se la variabile è primitiva ( int, boolean etc) non puoi assegnare due volte un valore
+        sulle classi: serve a dichiare una classe non estendibile ( quella classe non può avere classi figlie)
+        sui metodi: servre a dichiarare un metodo non sovrascrivibile dalle sottoclassi
+         */
+
+       /* static:
+       sulle variabili: serve a dichiarare una vriabile di classe e non di istanza (condivisa tra tutte le istanze)
+       sui metodi: vedi variabile su
+       sulle classi: viene utilizzata sulle classi interne (inner class), serve per istanziare queste classi interne senza necessità
+       di istanziare anche quelle esterne.
         */
 
     }

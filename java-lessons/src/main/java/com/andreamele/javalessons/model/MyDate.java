@@ -5,6 +5,7 @@ public class MyDate {
      visibilità tipo nome variabile;
      */
 
+    public static int currentYear;
     private int day;
     private int month;
     private int year;
@@ -81,5 +82,10 @@ public class MyDate {
             throw new IllegalArgumentException("Day of February must be between 1 and 29");
         }
     }
+    public void checkValidMonthAndYear (int month,int year ) {
+        if (month == 2 && year >= 30) {
+            throw new IllegalArgumentException("Day of February must be between 1 and 29");
+        }
+    }
 }
-// a casa validazione mese e anno - classe user Taxid obbligatorio
+// classe user Taxid obbligatorio
