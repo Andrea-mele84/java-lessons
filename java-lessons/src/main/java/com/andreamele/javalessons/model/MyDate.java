@@ -26,6 +26,7 @@ public class MyDate {
         checkValidDay(day);
         checkValidMonth(month);
         checkValidYear(year);
+        checkValidDayAndMonth(day, month);
         this.day = day;
         this.month = month;
         this.year =year;
@@ -82,10 +83,6 @@ public class MyDate {
             throw new IllegalArgumentException("Day of February must be between 1 and 29");
         }
     }
-    public void checkValidMonthAndYear (int month,int year ) {
-        if (month == 2 && year >= 30) {
-            throw new IllegalArgumentException("Day of February must be between 1 and 29");
-        }
-    }
+
 }
-// classe user Taxid obbligatorio
+

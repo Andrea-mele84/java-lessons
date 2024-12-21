@@ -1,11 +1,15 @@
 package com.andreamele.javalessons.model;
 
 public class User {
-    private String taxId;
     private String firstname;
     private String lastname;
+    private String taxId;
     private MyDate birthday;
 
+    // classe user Taxid obbligatorio
+   public User (String taxId){
+      this.taxId = taxId;
+   }
 
     public void setFistname(String name) {
         this.firstname = name;

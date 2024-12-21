@@ -66,7 +66,7 @@ class MyDateTest {
 
     @Test
     void checkMyDateConstructorWithOneArgKOForYearWrongTest() {
-        int year = 2030;
+        int year = 2025;
         //MyDate oneArg = new MyDate(year);
         Assertions.assertThrows(IllegalArgumentException.class, () -> new MyDate(year) );
 

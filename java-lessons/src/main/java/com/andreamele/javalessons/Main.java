@@ -5,10 +5,10 @@ import com.andreamele.javalessons.model.MyDate;
 
 public class Main {
     public static void main(String[] args) {
-        User meleAndrea = new User();
+        User meleAndrea = new User("MLENDR84L26F839L");
         meleAndrea.setFistname("Andrea");
         meleAndrea.setLastname("Mele");
-        meleAndrea.setTaxId("MLENDR84L26F839L");
+
 
         System.out.println("Nome utente: " + meleAndrea.getFirstname());
         System.out.println("Cognome utente: " + meleAndrea.getLastname());
@@ -24,12 +24,14 @@ public class Main {
         System.out.println(MyDate.currentYear);
 
 
-        birthdayOfAndrea.setDay(11);
+        birthdayOfAndrea.setDay(9);
         birthdayOfAndrea.setMonth(9);
         birthdayOfAndrea.setYear(2020);
         meleAndrea.setBirthdate(birthdayWithoutDay);
         birthdayOfAndrea.printDate();
         meleAndrea.getBirthday().printDate();
+
+
 
         //System.out.println("Anno compleanno:" + meleAndrea.getBirthday().getYear()) ;
         //System.out.println("birthday: " + meleAndrea.getBirthday());
