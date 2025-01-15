@@ -26,7 +26,7 @@ public class Book {
         author.setLastname(lastName);
         this.author = author;
     }
-
+// oggetto.metodo(parametro);
 
     public User getAuthor() {
         return author;
