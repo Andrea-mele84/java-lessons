@@ -4,6 +4,7 @@ public class Book {
     private final String title;
     private User author;
     private final String isbn;
+    private int pagesNumber;
 
 
     public Book(String title, String isbn) {
@@ -30,6 +31,17 @@ public class Book {
 
     public User getAuthor() {
         return author;
+    }
+
+    public void updatePagesNumber(int numeroPagine) {
+        numeroPagine = numeroPagine + 1;
+        System.out.println("Numero pagine nel Metodo: " + numeroPagine);
+    }
+
+    public void updateAuthor(User author) {
+        //author = new User("132");
+        author.setTaxId("456");
+        System.out.println("Author nel Metodo : " + author.getTaxId());
     }
 
 }
