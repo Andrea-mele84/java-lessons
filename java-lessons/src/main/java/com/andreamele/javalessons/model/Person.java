@@ -7,7 +7,7 @@ public abstract class Person {
     private MyDate birthday;
 
     // classe user Taxid obbligatorio
-   public Person(String taxId, String lastName){
+   public Person(String taxId){
       this.taxId = taxId;
    }
 
