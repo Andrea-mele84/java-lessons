@@ -11,6 +11,13 @@ public abstract class Person {
       this.taxId = taxId;
    }
 
+   public Person(String firstname, String lastname, String taxId){
+       this.firstname = firstname;
+       this.lastname = lastname;
+       this.taxId = taxId;
+
+
+   }
     public void setFistname(String name) {
         this.firstname = name;
     }
