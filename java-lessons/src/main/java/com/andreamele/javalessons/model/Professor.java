@@ -1,14 +1,22 @@
 package com.andreamele.javalessons.model;
 
-import java.time.Instant;
-import java.util.Date;
 
-public class Professor extends Person{
+public class Professor extends Person {
      private String department;
 
-     public Professor(String firstname, String lastname, String taxId,String department ) {
-          super(firstname,lastname,taxId);
-          this.department = department;
+     public Professor( String taxId) {
+          super(taxId);
 
+     }
+     public void setDepartment(String department) {
+          this.department = department;
+     }
+     public String getDepartment() {
+          return department;
+     }
+
+     @Override
+     public String getRole(){
+          return "Professor";
      }
 }
