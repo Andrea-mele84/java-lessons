@@ -42,6 +42,8 @@ public abstract class Person {
         return birthday;
 
     }
+
+    public abstract String getRole();
 }
 
 
