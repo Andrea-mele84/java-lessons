@@ -2,25 +2,25 @@ package com.andreamele.javalessons.model;
 
 public class Cerchio implements FiguraGeometrica{
 
-    private float raggio;
+    private double raggio;
     private final double PI_GRECO = Math.PI;
 
 
-    public Cerchio(float raggio) {
+    public Cerchio(double raggio) {
         this.raggio = raggio;
     }
-        public void setraggio(float raggio){
+        public void setraggio(double raggio){
         this.raggio = raggio;
     }
-     public float getraggio() {
+     public double getraggio() {
          return raggio;
      }
     @Override
-    public float getPerimetro() {
+    public double getPerimetro() {
         return 2 * PI_GRECO * raggio;
     }
     @Override
-    public float getArea () {
+    public double getArea () {
         return PI_GRECO * raggio * raggio;
          }
 
