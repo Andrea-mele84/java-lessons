@@ -10,19 +10,19 @@ public class Rettangolo implements FiguraGeometrica {
         this.altezza = altezza;
 
     }
-        public void setbase(double base) {
+        public void setBase(double base) {
             this.base  = base;
         }
 
-        public double getbase() {
+        public double getBase() {
             return base;
         }
 
-        public void setaltezza (double altezza){
+        public void setAltezza (double altezza){
             this.altezza = altezza;
         }
 
-        public double getaltezza () {
+        public double getAltezza () {
             return altezza;
         }
 

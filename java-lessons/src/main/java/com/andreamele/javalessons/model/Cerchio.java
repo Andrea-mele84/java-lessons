@@ -9,10 +9,10 @@ public class Cerchio implements FiguraGeometrica{
     public Cerchio(double raggio) {
         this.raggio = raggio;
     }
-        public void setraggio(double raggio){
+        public void setRaggio(double raggio){
         this.raggio = raggio;
     }
-     public double getraggio() {
+     public double getRaggio() {
          return raggio;
      }
     @Override
