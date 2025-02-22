@@ -1,6 +1,6 @@
 package com.andreamele.javalessons.model;
 
-public class Rettangolo implements FiguraGeometrica {
+public class Rettangolo  implements FiguraGeometrica {
 
     private double base;
     private double altezza;
@@ -32,7 +32,7 @@ public class Rettangolo implements FiguraGeometrica {
         }
         @Override
         public double getArea () {
-            return ((base * altezza) / 2);
+            return (base * altezza );
         }
 
 }
