@@ -14,7 +14,7 @@ public class Professor extends Person implements UniversityIdentifiable{
           this.department = department;
      }
      public String getDepartment() {
-          return department;
+          return  department;
      }
 
      @Override
