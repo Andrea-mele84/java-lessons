@@ -1,7 +1,7 @@
-package com.andreamele.javalessons.model;
+package com.andreamele.javalessons;
 
 
-import java.sql.SQLOutput;
+import com.andreamele.javalessons.model.*;
 
 public class MainCalcoli {
 
@@ -27,9 +27,8 @@ public class MainCalcoli {
 
         QuadratoV2 quadratoV2 = new QuadratoV2(5);
         System.out.println(quadratoV2.getLato());
-        quadratoV2.setLato(7);
-        System.out.println(quadratoV2.getLato());
         System.out.println(quadratoV2.getArea());
         System.out.println(quadratoV2.getPerimetro());
+
     }
 }
