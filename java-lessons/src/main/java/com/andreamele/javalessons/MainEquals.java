@@ -20,9 +20,9 @@ public class MainEquals {
 
         QuadratoV2 q3 = new QuadratoV2(15);
         QuadratoV2 q4 = q1;
-        RettangoloV2 r1 = new RettangoloV2(15,15,20,20);
+        RettangoloV2 r1 = new RettangoloV2(15,20);
         System.out.println("il perimetro del rettangolo r1 è " + r1.getPerimetro());
-        System.out.println("il perimetro del rettangolo r1 è " + r1.getArea());
+        System.out.println("l'area del rettangolo r1 è " + r1.getArea());
 
         //System.out.println("q1 è uguale a q2 ? " + q1.equals(q2));
         //System.out.println("q1 è uguale a q3 ? " + q1.equals(q3));
