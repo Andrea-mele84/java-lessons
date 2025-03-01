@@ -26,7 +26,6 @@ public class MainCalcoli {
         System.out.println("l'Area del cerchio è " + cerchio.getArea());
 
         QuadratoV2 quadratoV2 = new QuadratoV2(5);
-        System.out.println(quadratoV2.getLato());
         System.out.println(quadratoV2.getArea());
         System.out.println(quadratoV2.getPerimetro());
 
