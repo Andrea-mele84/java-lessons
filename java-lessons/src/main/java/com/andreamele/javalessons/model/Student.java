@@ -4,31 +4,45 @@ public class Student extends Person implements UniversityIdentifiable {
     private String course;
     private String matriculationNumber;
 
-    public Student( String taxId, String matriculationNumber){
+    public Student(String taxId, String matriculationNumber) {
         super(taxId);
         this.matriculationNumber = matriculationNumber;
 
     }
 
-    public void setCourse(String course){
+    public void setCourse(String course) {
         this.course = course;
     }
-    public String getCourse(){
+
+    public String getCourse() {
         return course;
     }
 
     @Override
-    public String getRole(){
+    public String getRole() {
         return "student";
     }
 
     @Override
-    public String getTaxId (){
+    public String getTaxId() {
         System.out.println("Get TaxId from " + this.getRole());
         return super.getTaxId();
     }
+
     @Override
-    public String getUniversityId(){
+    public String getUniversityId() {
         return matriculationNumber;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Student) {
+            Student other = (Student) obj;
+            return this.getLastname() == other.getLastname() && this.matriculationNumber == other.matriculationNumber;
+        } else {
+            return false;
+        }
+    }
+
+
 }

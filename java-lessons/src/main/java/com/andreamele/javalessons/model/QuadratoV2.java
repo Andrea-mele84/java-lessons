@@ -1,5 +1,8 @@
 package com.andreamele.javalessons.model;
 
+import java.util.Objects;
+import java.util.Random;
+
 public class QuadratoV2 extends Quadrilatero{
 
     public QuadratoV2 (double lato) {
@@ -21,14 +24,18 @@ public class QuadratoV2 extends Quadrilatero{
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof QuadratoV2){
-            QuadratoV2 other = (QuadratoV2) obj;
-            return super.base1 == other.base1;
+            return super.equals(obj);
         }
         else {
             return false;
         }
+    }
+    @Override
+    public int hashCode() {
+        return super.hashCode();
 
     }
+
     @Override
     public double getPerimetro () {
         return  this.base1 * 4;
