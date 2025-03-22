@@ -37,7 +37,7 @@ public class RettangoloV2 extends Quadrilatero{
     @Override
     public boolean equals(Object obj) {
         if (obj instanceof RettangoloV2) {
-            super.equals(obj);
+            return super.equals(obj);
         }
         else{
             return false;
