@@ -40,8 +40,8 @@ public class Professor extends Person implements UniversityIdentifiable {
      @Override
      public boolean equals(Object obj) {
           if (obj instanceof Professor) {
-               Professor other equals (Professor) obj;
-               return this.professorId == other.professorId && this.department == other.department;
+               Professor other = (Professor) obj;
+               return this.professorId.equals(other.professorId) && this.department.equals(other.department) ;
           } else {
                return false;
           }
@@ -50,6 +50,6 @@ public class Professor extends Person implements UniversityIdentifiable {
      @Override
      public int hashCode() {
           int hash = 7;
-
+        return hash;
      }
 }
