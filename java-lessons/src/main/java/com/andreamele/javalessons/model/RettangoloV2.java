@@ -50,4 +50,11 @@ public class RettangoloV2 extends Quadrilatero{
 
     }
 
+    @Override
+    public String toString() {
+        return "RettangoloV2{" +
+                "altezza1=" + altezza1 +
+                ", base1=" + base1 +
+                '}';
+    }
 }
