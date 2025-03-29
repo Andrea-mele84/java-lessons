@@ -43,6 +43,20 @@ public class Student extends Person implements UniversityIdentifiable {
             return false;
         }
     }
+    @Override
+    public int hashCode() {
+        int hash = 7;
+        return hash * this.getLastname().hashCode() * this.matriculationNumber.hashCode();
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "firstName='" + this.getFirstname() + '\'' +
+                "course='" + course + '\'' +
+                ", matriculationNumber='" + matriculationNumber + '\'' +
+                '}';
+    }
 
 
 }

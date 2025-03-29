@@ -19,8 +19,10 @@ public class MainListContrario {
         lista.add(rettangolo3);
         lista.add(rettangolo4);
 
+
+
         for (int i = lista.size() - 1; i >= 0; i--) {
-            RettangoloV2 rettangoloIesimo = (RettangoloV2) lista.get(i);
+            RettangoloV2 rettangoloIesimo = lista.get(i);
             System.out.println("La base del rettangolo in ordine " + i + " è : " + rettangoloIesimo.getBase());
         }
     }
