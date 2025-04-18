@@ -38,7 +38,7 @@ public class Student extends Person implements UniversityIdentifiable {
     public boolean equals(Object obj) {
         if (obj instanceof Student) {
             Student other = (Student) obj;
-            return this.getLastname().equals(other.getLastname()) && this.matriculationNumber.equals(other.matriculationNumber);
+            return this.getTaxId().equals(other.getTaxId()) && this.matriculationNumber.equals(other.matriculationNumber);
         } else {
             return false;
         }

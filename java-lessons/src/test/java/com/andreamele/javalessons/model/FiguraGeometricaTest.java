@@ -2,7 +2,7 @@ package com.andreamele.javalessons.model;
 
 import org.junit.jupiter.api.Test;
 
-public class FiguraGeometricaTest {
+class FiguraGeometricaTest {
 
     @Test
     void testRettangolo2() {
