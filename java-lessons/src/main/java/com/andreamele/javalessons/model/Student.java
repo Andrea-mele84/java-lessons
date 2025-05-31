@@ -46,7 +46,7 @@ public class Student extends Person implements UniversityIdentifiable {
     @Override
     public int hashCode() {
         int hash = 7;
-        return hash * this.getLastname().hashCode() * this.matriculationNumber.hashCode();
+        return hash * this.getTaxId().hashCode() * this.matriculationNumber.hashCode();
     }
 
     @Override
