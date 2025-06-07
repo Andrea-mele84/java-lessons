@@ -15,9 +15,13 @@ public class MainRegistroPresenze {
         try {
             System.out.println("Presenze dell'alunno Esposito sono: " +registroPresenze.getPresenze("Esposito"));
             System.out.println("Presenze dell'alunno Mele sono: " +registroPresenze.getPresenze("Mele"));
+            System.out.println("Presenze dell'alunno Esposito sono: " +registroPresenze.getPresenze("Esposito"));
         }
         catch (StudentNotPresentException e) {
            e.printStackTrace();
+        }
+        finally {
+            System.out.println("sono nel finally..");
         }
 
         System.out.println("Totale presenze dell'alunno Mele sono: " +registroPresenze.getNumeroPresenza("Mele"));
